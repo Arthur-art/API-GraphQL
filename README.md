@@ -20,7 +20,7 @@
 {"name": "Daniel"},
 {"name": "Sono"}
 ```
-- Como demonstrado acima o GraphQL através de querys requisita apenas o necessário para o backend, nesse exemplo precisamos apenas dos nomes dos usuários, oque seria desnecessário trazer todo o arquivo json que iria impactar no uso de mais bytes e no gasto maior serviços como AWS;
+- Como demonstrado acima o GraphQL através de querys requisita apenas o necessário para o backend, nesse exemplo precisamos apenas dos nomes dos usuários, oque seria desnecessário trazer todo o arquivo json que iria impactar no uso de mais bytes e no gasto maior de serviços como AWS;
 
 - AWS -> Pay per use: paga por uso.
 - Tráfego: quantidade de dados (bytes) trafegados na rede.
