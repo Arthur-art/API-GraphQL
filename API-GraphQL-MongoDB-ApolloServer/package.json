@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "npx nodemon --exec babel-node src/index.js"
+    "dev": "npx nodemon --exec babel-node src/index.js -e js,gql"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.7",
