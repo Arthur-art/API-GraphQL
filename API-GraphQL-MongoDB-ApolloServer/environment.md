@@ -4,3 +4,6 @@
 - yarn add nodemon -D
 - yarn add apollo-server graphql
 - yarn add mongoose
+
+# Merge GraphQL
+- yarn add merge-graphql-schemas
