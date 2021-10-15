@@ -50,7 +50,7 @@ const typeDefs = gql`
     }
 
     type Mutation {
-        createUser(name: String!, email: String!, age: Int!, email:String!) : User!
+        createUser(name: String!, email: String!, age: Int!, email:String!) : [User!]
     }
 `;
 
@@ -79,7 +79,7 @@ const resolvers = {
                 active: true
             }
             users.push(newUser);
-            return newUser;
+            return users;
         }
     }
 };
