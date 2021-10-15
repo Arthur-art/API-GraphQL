@@ -1,22 +1,19 @@
 import mongoose from "mongoose"
 
 const Schema = mongoose.Schema({
-    firstName:{
+    title:{
         type:String,
         require: true
     },
-    lastName:{
+    content:{
         type:String,
         require: true
     },
-    email:{
-        type:String,
+    author:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref: "User",
         require: true
     },
-    active:{
-        type:Boolean,
-        require: true
-    }
 });
 
-export default mongoose.model("User", Schema);
+export default mongoose.model("Post", Schema);
