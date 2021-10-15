@@ -1,0 +1,6 @@
+{
+  "name": "API-GraphQL-MongoDB-ApolloServer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
