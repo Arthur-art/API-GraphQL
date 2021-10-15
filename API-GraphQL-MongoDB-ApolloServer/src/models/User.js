@@ -3,19 +3,19 @@ import mongoose from "mongoose"
 const Schema = mongoose.Schema({
     firstName:{
         type:String,
-        require: true
+        required: true
     },
     lastName:{
         type:String,
-        require: true
+        required: true
     },
     email:{
         type:String,
-        require: true
+        required: true
     },
     active:{
         type:Boolean,
-        require: true
+        required: true
     }
 });
 
