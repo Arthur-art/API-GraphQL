@@ -46,6 +46,7 @@ const typeDefs = gql`
         hello:String 
         users: [User!]!
         getUserByEmail(email:String!): User!
+        sum(a:Int!,b:Int!): Int!
     }
 
     type Mutation {
@@ -62,6 +63,9 @@ const resolvers = {
             return users.find((user)=>{
                return user.email === args.email
             });
+        },
+        sum: (_,args)=>{
+            return args.a + args.b
         }
     },
 
