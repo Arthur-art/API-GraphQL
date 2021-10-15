@@ -2,5 +2,19 @@
   "name": "API-GraphQL-MongoDB-ApolloServer",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx nodemon --exec babel-node src/index.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/node": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "nodemon": "^2.0.13"
+  },
+  "dependencies": {
+    "apollo-server": "^3.4.0",
+    "graphql": "^15.6.1"
+  }
 }
