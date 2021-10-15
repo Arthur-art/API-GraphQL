@@ -22,7 +22,7 @@ export default {
     },
     Subscription:{
         userAdded:{
-            subscribe: (obj, args, {pubsub}) => pubsub.asyncInterator(USER_ADDED),
+            subscribe: (obj, args, {pubsub}) => pubsub.asyncIterator(USER_ADDED),
         },
     }
 }
