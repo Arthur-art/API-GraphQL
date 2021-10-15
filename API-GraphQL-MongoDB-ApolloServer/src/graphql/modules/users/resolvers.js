@@ -11,6 +11,11 @@ export default {
         deleteUser: async (_, {id}) => {
             const deleted = await User.findOneAndDelete(id);
             return !!deleted;
-        }
+        } 
     },
+    Subscription:{
+        userAdded:{
+            subscribe: (obj, args, context) => context.hello,
+        },
+    }
 }

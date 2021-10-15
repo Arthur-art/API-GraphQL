@@ -8,7 +8,7 @@ async function startServer({typeDefs,resolvers}){
     useNewUrlParser: true
     });
 
-    const server = new ApolloServer({typeDefs,resolvers});
+    const server = new ApolloServer({typeDefs,resolvers, context: {hello: "Hello world"}});
     server.listen().then(({url})=>console.log(`Server starte in ${url}`));
 }
 
