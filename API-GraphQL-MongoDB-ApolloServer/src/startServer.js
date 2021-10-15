@@ -1,4 +1,4 @@
-import {ApolloServer} from "apollo-server"
+import {ApolloServer, PubSub} from "apollo-server"
 import mongoose from "mongoose"
 
 async function startServer({typeDefs,resolvers}){
@@ -8,7 +8,9 @@ async function startServer({typeDefs,resolvers}){
     useNewUrlParser: true
     });
 
-    const server = new ApolloServer({typeDefs,resolvers, context: {hello: "Hello world"}});
+    const pubsub = new PubSub();
+
+    const server = new ApolloServer({typeDefs,resolvers, context: { pubsub } });
     server.listen().then(({url})=>console.log(`Server starte in ${url}`));
 }
 
