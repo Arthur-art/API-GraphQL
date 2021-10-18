@@ -1,9 +1,9 @@
 # Estudos sobre o GraphQL:
 - Link dos cursos:
--  https://www.youtube.com/watch?v=7RoHxSGVAdU&list=PLPXWI3llyMiK9uw7tfljM2hnQl2qu6CeT
--  https://www.youtube.com/watch?v=oD8GqurXZ-0
--  https://www.youtube.com/watch?v=smWR_SxdeUU
--  https://www.youtube.com/watch?v=mNiAwtKbcrk&list=PL85ITvJ7FLohz54DLfinJeHi7DrHGT2_U&index=30
+- 1 https://www.youtube.com/watch?v=7RoHxSGVAdU&list=PLPXWI3llyMiK9uw7tfljM2hnQl2qu6CeT
+- 2 https://www.youtube.com/watch?v=oD8GqurXZ-0
+- 3 https://www.youtube.com/watch?v=smWR_SxdeUU
+- 4 https://www.youtube.com/watch?v=mNiAwtKbcrk&list=PL85ITvJ7FLohz54DLfinJeHi7DrHGT2_U&index=30
 
 # Qual o problema que o GraphQL resolve ?
 
