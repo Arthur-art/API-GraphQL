@@ -2,7 +2,7 @@ const User = require("./User");
 
 const users = [
     {
-        _id: 0.2727316853963053,
+        _id: String(Math.random()),
         name: "Arthur",
         email: "arthur.guts@gmail.com",
         age: 25,
