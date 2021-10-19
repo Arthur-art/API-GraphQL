@@ -1,32 +1,32 @@
 import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
   useQuery,
   gql
 } from "@apollo/client";
 
-const client = new ApolloClient({
-  uri: 'http://localhost:4000',
-  cache: new InMemoryCache()
-});
-
 export function App() {
+  const { loading, error, data } = useQuery(DATA_GRAPHQL);
+
+  const users = data?.users;
+  
+  if(users){
+    users.map((value)=>{
+      console.log(value.name);
+    })
+  }
+
   return (
     <>
-    
+    {users && users.map((value)=>{
+      return <li>{value.name}</li>
+    })}
     </>
   );
 }
 
-client
-  .query({
-    query: gql`
+const DATA_GRAPHQL =  gql`
       query{
   users{
     name
   }
 }
-    `
-  })
-  .then(result => console.log(result));
+    `;
