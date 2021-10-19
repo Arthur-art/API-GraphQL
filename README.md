@@ -5,9 +5,6 @@
 # GraphQL aplicado no Node.js
 - https://www.youtube.com/watch?v=oD8GqurXZ-0
 
-# Iniciando com GraphQL no React/React Native
-- https://www.youtube.com/watch?v=smWR_SxdeUU
-
 # GraphQL no front-end com ReactJS e Apollo
 - https://www.youtube.com/watch?v=mNiAwtKbcrk&list=PL85ITvJ7FLohz54DLfinJeHi7DrHGT2_U&index=30
 
