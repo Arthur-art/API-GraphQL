@@ -1,7 +1,9 @@
 import {
   useQuery,
-  gql
-} from "@apollo/client";  
+  gql,
+  useMutation
+} from "@apollo/client";
+import { User } from "./components/mutations/CreateUser";
 
 export function App() {
   const { loading, error, data } = useQuery(DATA_GRAPHQL);
@@ -23,6 +25,7 @@ export function App() {
       return <li key={value._id}> Name: {value.name} / Email: {value.email}</li>
     })}
     {error && <p>Ops, Ocorreu um erro ao tentar fazer um request na sua api :(</p>}
+    <User/>
     </>
   );
 }
