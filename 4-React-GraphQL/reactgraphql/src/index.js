@@ -6,6 +6,7 @@ import {
   InMemoryCache,
   ApolloProvider,
 } from "@apollo/client";
+import ErrorBoundary from "./components/ErrorBoundary"
 
 const client = new ApolloClient({
   uri: 'http://localhost:4000',
@@ -15,8 +16,11 @@ const client = new ApolloClient({
 ReactDOM.render(
   <React.StrictMode>
    <ApolloProvider client={client}>
-   <App />
+  <ErrorBoundary>
+  <App />
+  </ErrorBoundary>
    </ApolloProvider>
+  
   </React.StrictMode>,
   document.getElementById('root')
 );

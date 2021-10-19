@@ -1,7 +1,7 @@
 import {
   useQuery,
   gql
-} from "@apollo/client";
+} from "@apollo/client";  
 
 export function App() {
   const { loading, error, data } = useQuery(DATA_GRAPHQL);
@@ -32,7 +32,7 @@ const DATA_GRAPHQL =  gql`
   users{
     name
     _id
-    emai
+    email
   }
 }
     `;
