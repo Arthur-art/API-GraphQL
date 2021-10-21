@@ -4,6 +4,7 @@ import {
     useMutation
   } from "@apollo/client";  
 import React,{useState} from "react"
+import { DATA_GRAPHQL } from "../../App";
 
 const CREATE_USER = gql`
   mutation CreateUser($name: String!,$age: Int!,$email: String!){
@@ -25,7 +26,8 @@ export const User = ()=>{
                 name:name,
                 age: Number(age),
                 email: email
-            }
+            },
+            refetchQueries:[{query: DATA_GRAPHQL}]
     });
 
     return (

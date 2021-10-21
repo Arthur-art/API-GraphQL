@@ -30,7 +30,7 @@ export function App() {
   );
 }
 
-const DATA_GRAPHQL =  gql`
+export const DATA_GRAPHQL =  gql`
       query{
   users{
     name
