@@ -35,6 +35,10 @@ const typeDefs = gql`
         active: Boolean!
     }
 
+    type Value{
+        value: Int!
+    }
+
     type Post {
         _id: ID!
         title: String
@@ -46,7 +50,7 @@ const typeDefs = gql`
         hello:String 
         users: [User!]!
         getUserByEmail(email:String!): User!
-        sum(a:Int!,b:Int!): Int!
+        sum(a:Int!,b:Int!): Value!
     }
 
     type Mutation {
@@ -65,7 +69,10 @@ const resolvers = {
             });
         },
         sum: (_,args)=>{
-            return args.a + args.b
+
+            return {
+                value: args.a + args.b
+            }
         }
     },
 

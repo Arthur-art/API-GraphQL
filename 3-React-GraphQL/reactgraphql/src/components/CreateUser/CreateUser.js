@@ -1,5 +1,4 @@
 import {
-    useQuery,
     gql,
     useMutation
   } from "@apollo/client";  

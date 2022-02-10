@@ -2,7 +2,6 @@ const {GraphQLServer} = require("graphql-yoga");
 const path =  require("path");
 const resolvers = require("./resolvers");
 const mongoose = require("mongoose");
-const User = require("./User");
 
 mongoose.connect("mongodb://localhost:27017/graphqlrocketseat", {
     maxPoolSize: 50,

@@ -1,7 +1,6 @@
-import react, { useEffect, useState } from "react";
+import react, { useState } from "react";
 import "./styles.css";
 import {
-  useQuery,
   gql,
   useMutation
 } from "@apollo/client";

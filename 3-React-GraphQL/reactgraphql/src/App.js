@@ -1,7 +1,6 @@
 import {
   useQuery,
   gql,
-  useMutation
 } from "@apollo/client";
 import { CreateUser } from "./components/CreateUser/CreateUser";
 import { Users } from "./components/Users/Users";
