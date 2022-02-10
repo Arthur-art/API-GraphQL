@@ -3,8 +3,8 @@ import {
   gql,
   useMutation
 } from "@apollo/client";
-import { CreateUser } from "./components/CreateUser";
-import { Users } from "./components/Users";
+import { CreateUser } from "./components/CreateUser/CreateUser";
+import { Users } from "./components/Users/Users";
 import "./styles.css";
 
 export function App() {

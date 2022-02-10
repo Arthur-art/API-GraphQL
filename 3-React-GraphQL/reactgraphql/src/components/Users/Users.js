@@ -33,8 +33,6 @@ function deleteNewUser(idProps){
   setId(idProps)
   if(id){
     mutateFunction();
-  }else{
-    alert("Tem certeza que deseja excluir esse usuário?")
   }
 }
     
