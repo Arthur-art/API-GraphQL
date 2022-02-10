@@ -46,11 +46,11 @@ export const CreateUser = ()=>{
     
 
     return (
-        <div className="createUser">
+        <form className="createUser" onSubmit={createNewUser}>
         <input value={name} type="text" placeholder="name" onChange={({target}) => setName(target.value)} />
         <input value={age} type="text" placeholder="age" onChange={({target}) => setAge(target.value)} />
         <input value={email} type="text" placeholder="email" onChange={({target}) => setEmail(target.value)} />
         <button onClick={createNewUser}>Create</button>
-        </div>
+        </form>
     )
 }
