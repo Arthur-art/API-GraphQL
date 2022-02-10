@@ -1,0 +1,15 @@
+.createUser{
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+}
+.createUser input {
+    width: 39.5rem;
+    height: 2rem;
+}
+
+.createUser button {
+    width: 40rem;
+    height: 2rem;
+    cursor: pointer;
+}

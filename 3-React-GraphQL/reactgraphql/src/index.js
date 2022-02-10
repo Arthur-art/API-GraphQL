@@ -7,6 +7,7 @@ import {
   ApolloProvider,
 } from "@apollo/client";
 import ErrorBoundary from "./components/ErrorBoundary"
+import "./styles.css";
 
 const client = new ApolloClient({
   uri: 'http://localhost:4000',

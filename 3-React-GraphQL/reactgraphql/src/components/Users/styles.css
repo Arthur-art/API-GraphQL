@@ -1,0 +1,27 @@
+.buttonsUser{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 50rem;
+    
+}
+
+.buttonsUser .createButton{
+    background: rgb(40, 207, 82);
+    border: none;
+    border-radius: 2px;
+    width: 40rem;
+    height: 5rem;
+    margin-top: 0.2rem;
+    cursor: pointer;
+    font-size: 20px;
+}
+.buttonsUser .deleteButton{
+    background: white;
+    border: none;
+    border-radius: 2px;
+    width: 4rem;
+    height: 5rem;
+    margin-top: 0.2rem;
+    cursor: pointer;
+}

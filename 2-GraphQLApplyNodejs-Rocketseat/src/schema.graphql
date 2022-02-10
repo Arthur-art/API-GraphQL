@@ -2,15 +2,15 @@ type User{
         _id: ID!,
         name: String!,
         email: String!,
-        age: Int!,
+        age: String!,
         active: Boolean
 }
 
 type Query{
     users:[User!]!
-    user(id: ID!): User
 }
 
 type Mutation{
-    createUser(name: String!, age:Int!, email:String!): User
+    createUser(name: String!, age:String!, email:String!): User
+    deleteUser(id:ID!): User
 }
